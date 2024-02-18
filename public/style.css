@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bg {
+    background-image: url('./bg.jpg'); /* Замените 'background.jpg' на вашу картинку */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: #333; /* цвет фона инпута */
+    color: #fff; /* цвет текста инпута */
+    border: 1px solid #555; /* цвет границы инпута */
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    color: #fff;
+    text-shadow: 3px 3px 7px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.settings-section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    min-width: 700px;
+    border-radius: 20px;
+}
+
+.settings-section::after{
+    content: '';
+    display: block;
+    background-color: #000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    border-radius: 20px;
+
+}
+
+.section-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
